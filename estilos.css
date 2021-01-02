@@ -1,0 +1,449 @@
+*{
+    font-family:'Montserrat', 'Roboto', sans-serif;
+    font-size: 13px;
+    padding: 0;
+    margin:0;
+    border:0;
+    box-sizing:border-box;
+    font-size: 16px;
+}
+body{
+    width: 100%;
+    background-color: seagreen;
+}
+
+body.dark {
+    background-color: #37383C;
+}
+header{
+    width:100%;
+    height:90px;
+    background-color: #FFFFFF;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: solid 5px #572EE5;
+}
+body.dark header {
+    background-color: #37383C;
+
+}
+label #bars, label #cancel{
+    position: absolute;
+    z-index: 101;
+}
+label #cancel{
+    opacity: 0;
+    visibility: hidden;
+}
+#b_menu{
+    float: right;
+    display: none;
+}
+header label{
+    display: none;
+    width:60px;
+    padding: 10px;
+    transition: all 500ms ease;
+    float: right;
+}
+.logo{
+    font-family: 'Roboto';
+    margin-top:18px;
+    margin-bottom: 12.9px;
+    margin-left:156px;
+    width: 68px;
+    height:60px;
+}
+.menu{
+    margin-right: 156px;
+    display: flex;
+}
+.menu ul{
+    list-style: none;
+    text-decoration: none;
+    display: flex;
+
+}
+.menu ul li{
+    font-family: Montserrat;
+    font-weight: bold;
+    text-decoration: none;
+    color:#572EE5;
+    transition: all 500ms ease;
+    font-size: 13px;
+    text-transform: uppercase;
+    margin-top:41px;
+    margin-left: 41.5px;
+}
+body.dark .menu ul li{
+    color: #FFFFFF;
+}
+.new{
+   margin-top:18px;
+   margin-bottom: 18px;
+    border-radius: 50%;
+    border: 1px solid #572EE5;
+    background-color: #FFFFFF;
+    width: 54px;
+    height: 54px;
+    position: relative;
+    margin-left: 53px;
+}
+.quote{
+    height: 100px;
+    font-size: 35px;
+    color: #572EE5;
+    text-align: center;
+    line-height: 50px;
+    margin-top: 76px;
+    margin-left: 253px;
+    margin-right: 253px;
+}
+.friends{
+    width:399px;
+    height: 190px;
+    display:block;
+    margin: auto;
+    margin-top: 24px;
+}
+#quest{
+    background: #FFFFFF;
+    border: 1px solid #572EE5;
+    border-radius: 27px;
+    border-radius: 27px;
+    display: block;
+    margin: auto;
+    width: 551px;
+    height: 50px;
+    }
+::placeholder{
+    font-family: 'Roboto';
+    font-size: 16px;
+    color: #6B7989;
+    text-align: left;
+    padding-left: 55px;
+}
+.inspiration h3{
+    padding-top: 73px;
+    padding-bottom: 7px;
+    font-size: 18px;
+    color: #572EE5;
+    text-align: center;
+    line-height: 25px;
+}
+.inspiration p{
+    font-size: 16px;
+    color: #572EE5;
+    text-align: center;
+    line-height: 25px;
+    padding-bottom: 95px;
+}
+.lens{
+    position: relative;
+    width: 551px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+}
+.lens i{
+    position: absolute;
+    right: 20px;
+    color: #572EE5;
+}
+.trending{
+    width: 100%;
+    height: 640px;
+    background-color: #F3F5F8;
+}
+body.dark .trending{
+    background-color: #222326;
+    color:#FFFFFF;
+}
+.trending h2{
+    font-size: 25px;
+    color: #572EE5;
+    text-align: center;
+    line-height: 30px;
+    padding-top: 67px;
+    padding-bottom: 12px;
+}
+.trending p{
+    font-family: 'Roboto';
+    font-size: 18px;
+    color: #000000;
+    text-align: center;
+    padding-bottom: 53px;
+}
+.carousel button{
+    border: 1px solid #572EE5;
+    background-color:#F3F5F8;
+    width: 40px;
+    height: 40px;
+    color:#572EE5;
+    font-size: 14px;
+    margin: auto;
+}
+.carousel{
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: 29px;
+    overflow: hidden;
+}
+.carousel img{
+    height: 275px;
+    width: 357px;
+}
+
+footer{
+    background-color: #FFFFFF;
+    height: 116px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    padding-left: 156px;
+    align-items: center;
+    border-bottom: #572EE5 solid 5.1px;
+}
+
+body.dark footer{
+    background-color: #37383C;
+}
+footer p{
+    font-family: Roboto;
+    font-size: 13px;
+    color: #000000;
+    letter-spacing: 0;
+   
+}
+footer br{
+    display: none;
+}
+footer i{
+ margin-left: 16px;
+ color: #CDD6E0;
+ font-size: 20px;
+ 
+}
+.facebook i:hover, .instagram i:hover, .twitter i:hover{
+   color: #572EE5;
+   font-size: 20px;
+}
+.copy{
+    grid-column: end;
+    margin-right: 158px;
+}
+
+@media screen and (max-width: 1024px){
+    body{
+        width: 100%;
+        padding: 0;
+        background-color:magenta;
+    }
+    header{
+        width:100%;
+        height:90px;
+        background-color: #FFFFFF;
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+        border-top: solid 5px #572EE5;
+        }
+    .logo {
+        width: 68px;
+        height:60px;
+        }
+    .menu{
+        margin-right: 156px;
+        }
+    .carousel{
+        grid-column-gap: 22px;
+        padding-left: 22px;
+        overflow: scroll;
+        }
+}
+
+@media screen and (max-width: 768px){
+    body{
+        width:100%;
+        background-color: red;
+    }
+    .logo{
+        margin-top:29px;
+        margin-bottom: 17px;
+        margin-left:22px;
+        width: 56px;
+        height: 48.8px;
+    }
+    header{
+        width: 100%;
+        height: 95px;
+        border-top: solid 5px #572EE5;
+    }
+    header label{
+        display:block;
+        z-index: 102;
+    }
+    .new{
+        display: none;
+    }
+    .menu{
+        position: absolute;
+        width: 100%;
+        margin-top: -500%;
+        padding-top: 574px;
+        transition: all 500ms ease;
+        z-index: 2;
+    }
+    .menu ul{
+        width: 100%;
+        height:484px;
+        background-color:#572EE5;
+        flex-direction: column;
+        text-decoration: none;
+        list-style: none;
+        margin-top: 0;
+        padding: 0;
+        justify-content: flex-start;
+    }
+    .menu ul li{
+        font-size: 15px;
+        color: #FFFFFF;
+        text-align: center;
+        line-height: 30px;
+        padding: 0;
+        margin:0;
+    }
+    #b_menu:checked~.menu{
+        margin: 0;
+    }
+    #b_menu:checked ~ label #bars{
+        opacity: 0;
+        visibility: hidden;
+    }
+    #b_menu:checked ~ label #cancel{
+        opacity: 1;
+        visibility: visible;
+    }
+    .quote{
+        width: 286px;
+        height: 99px;
+        font-size: 25px;
+        color: #572EE5;
+        text-align: center;
+        line-height: 33px;
+        padding-top: 7px;
+        display: block;
+        margin: auto;
+    }
+    .friends{
+        width:273px;
+        height: 130px;
+        display:block;
+        margin: auto;
+        margin-top: 31px;
+    }
+    #quest{
+        background: #FFFFFF;
+        border: 1px solid #572EE5;
+        border-radius: 27px;
+        border-radius: 27px;
+        display: block;
+        margin: auto;
+        width: 334px;
+        height: 50px;
+        }
+    ::placeholder{
+        font-family: Roboto;
+        font-size: 16px;
+        color: #6B7989;
+        text-align: left;
+        padding-left: 55px;
+    }
+    .inspiration h3{
+        padding-top: 31px;
+        padding-bottom: 2px;
+        font-size: 16px;
+        color: #572EE5;
+        text-align: center;
+        line-height: 25px;
+    }
+    .inspiration p{
+        font-size: 14px;
+        color: #572EE5;
+        text-align: center;
+        line-height: 25px;
+        margin-bottom: 45px;
+        height: 50px;
+        width: 225px;
+        display: block;
+        margin: auto;
+    }
+    .lens{
+        position: relative;
+        width: 334px;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+    }
+    .lens i{
+        position: absolute;
+        right: 20px;
+        color: #572EE5;
+    }
+    
+    .trending{
+        width: 100%;
+        height: 430px;
+        background-color: #F3F5F8;
+    }
+    .trending h2{
+        padding-top: 46px;
+        padding-bottom: 7px;
+    }
+    .carousel button{
+       display: none;
+    }
+    .carousel{
+        grid-column-gap: 22px;
+        padding-left: 22px;
+        overflow: scroll;
+    }
+    .carousel img{
+        height: 187px;
+        width: 243px;
+    }
+    footer{
+        background-color: #FFFFFF;
+        height: 196px;
+        display:block;
+        padding-top: 47px;
+        padding-left: 0px;
+        margin:auto;
+        align-content: center;
+    }
+    footer p{
+        font-family: 'Roboto';
+        font-size: 14px;
+        color: #000000;
+        letter-spacing: 0;
+        line-height: 20px;
+        text-align: center;
+    }
+    footer br{
+        display:block;
+    }
+    footer a i{
+        padding-top: 22px;
+        margin-bottom: 46px;
+    }
+    .copy{
+    text-align: center;
+    margin: 0;
+    }
+    
+}
+
+
